@@ -9,7 +9,9 @@ Implemented C++23 features:
 * [P1899R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1899r3): "`stride_view`" ([#2981](https://github.com/microsoft/STL/pull/2981)),
 * [P2446R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2446r2): "`views::as_rvalue`" ([#3008](https://github.com/microsoft/STL/pull/3008)),
 * [P2278R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2278r4): "`cbegin` should always return a constant iterator" ([#3043](https://github.com/microsoft/STL/pull/3043), [#3187](https://github.com/microsoft/STL/pull/3187), [#3234](https://github.com/microsoft/STL/pull/3234)),
-* [P2322R6](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2322r6): "`ranges::fold`" ([#3099](https://github.com/microsoft/STL/pull/3099)).
+* [P2322R6](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2322r6): "`ranges::fold`" ([#3099](https://github.com/microsoft/STL/pull/3099)),
+* [P2165R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2165r4.pdf): "Compatibility between `tuple`, `pair` and *tuple-like* objects" ([#3323](https://github.com/microsoft/STL/pull/3323)),
+* [P2404R3](https://wg21.link/P2404R3): "Move-only types for `equality_comparable_with`, `totally_ordered_with`, and `three_way_comparable_with`" ([#3345](https://github.com/microsoft/STL/pull/3345)).
 
 Implemented LWG issues:
 
@@ -32,7 +34,8 @@ Other improvements:
 
 * [#2696](https://github.com/microsoft/STL/pull/2696): "Update `_MSVC_STL_UPDATE` (may 2022)",
 * [#3089](https://github.com/microsoft/STL/pull/3089): "Cleanup `views::as_rvalue` tests",
-* [#3117](https://github.com/microsoft/STL/pull/3117): "Constexprize `bind_front` and `bind_back` tests".
+* [#3117](https://github.com/microsoft/STL/pull/3117): "Constexprize `bind_front` and `bind_back` tests",
+* [#3350](https://github.com/microsoft/STL/pull/3350): "Improve `views::elements` tests".
 
 ### MSVC compiler
 
@@ -47,5 +50,13 @@ Reported bugs:
 
 Reported bugs:
 
-* [#58315](https://github.com/llvm/llvm-project/issues/58315): "[libc++][format] Strings are incorrectly aligned when alignment is not specified".
-* [#59763](https://github.com/llvm/llvm-project/issues/59763): "[libc++][format] String literals inside of `tuple` and `pair` should be escaped"
+* [#58315](https://github.com/llvm/llvm-project/issues/58315): "\[libc++][format] Strings are incorrectly aligned when alignment is not specified",
+* [#59763](https://github.com/llvm/llvm-project/issues/59763): "\[libc++][format] String literals inside of `tuple` and `pair` should be escaped",
+* [#60123](https://github.com/llvm/llvm-project/issues/60123): "\[libc++][format] Negation of `LLONG_MIN` (UB) when formatting `chrono::duration`",
+* [#60164](https://github.com/llvm/llvm-project/issues/60164): "\[libc++][format] Some contiguous ranges cannot be formatted due to lack of `data` or `size` member functions".
+
+### Clang
+
+Reported bugs:
+
+* [#59827](https://github.com/llvm/llvm-project/issues/59827): "\[Clang][concepts] Conditional explicit specifier is checked too early in constrained constructor"
