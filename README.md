@@ -15,7 +15,7 @@ Implemented C++23 features:
 * [P2164R9](https://wg21.link/P2164R9): "`views::enumerate`" ([#3472](https://github.com/microsoft/STL/pull/3472)),
 * [P2609R3](https://wg21.link/P2609R3): "Relaxing Ranges Just A Smidge" ([#3486](https://github.com/microsoft/STL/pull/3486)),
 * [P2321R2](https://wg21.link/P2321R2): "`zip`" (partial: [#3508](https://github.com/microsoft/STL/pull/3508), [#3546](https://github.com/microsoft/STL/pull/3546)),
-* [P0009R18](https://wg21.link/P0009R18): "MDSPAN" (partial: [#3534](https://github.com/microsoft/STL/pull/3534), [#3535](https://github.com/microsoft/STL/pull/3535), [#3560](https://github.com/microsoft/STL/pull/3560), [#3564](https://github.com/microsoft/STL/pull/3564), [#3580](https://github.com/microsoft/STL/pull/3580)),
+* [P0009R18](https://wg21.link/P0009R18): "MDSPAN" (partial: [#3534](https://github.com/microsoft/STL/pull/3534), [#3535](https://github.com/microsoft/STL/pull/3535), [#3560](https://github.com/microsoft/STL/pull/3560), [#3564](https://github.com/microsoft/STL/pull/3564), [#3580](https://github.com/microsoft/STL/pull/3580), [#3586](https://github.com/microsoft/STL/pull/3586), [#3593](https://github.com/microsoft/STL/pull/3593), [#3603](https://github.com/microsoft/STL/pull/3603), [#3615](https://github.com/microsoft/STL/pull/3615), [#3616](https://github.com/microsoft/STL/pull/3616), [#3632](https://github.com/microsoft/STL/pull/3632)),
 * [P2736R2](https://wg21.link/P2736R2): "Referencing The Unicode Standard" ([#3556](https://github.com/microsoft/STL/pull/3556)),
 * [P2374R4](https://wg21.link/P2374R4): "`views::cartesian_product`" ([#3561](https://github.com/microsoft/STL/pull/3561)).
 
