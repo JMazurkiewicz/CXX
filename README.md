@@ -15,7 +15,7 @@ Implemented C++23 features:
 * [P2164R9](https://wg21.link/P2164R9): "`views::enumerate`" ([#3472](https://github.com/microsoft/STL/pull/3472)),
 * [P2609R3](https://wg21.link/P2609R3): "Relaxing Ranges Just A Smidge" ([#3486](https://github.com/microsoft/STL/pull/3486)),
 * [P2321R2](https://wg21.link/P2321R2): "`zip`" (partial: [#3508](https://github.com/microsoft/STL/pull/3508), [#3546](https://github.com/microsoft/STL/pull/3546)),
-* [P0009R18](https://wg21.link/P0009R18): "MDSPAN" (partial: [#3534](https://github.com/microsoft/STL/pull/3534), [#3535](https://github.com/microsoft/STL/pull/3535), [#3560](https://github.com/microsoft/STL/pull/3560), [#3564](https://github.com/microsoft/STL/pull/3564), [#3580](https://github.com/microsoft/STL/pull/3580), [#3586](https://github.com/microsoft/STL/pull/3586), [#3593](https://github.com/microsoft/STL/pull/3593), [#3603](https://github.com/microsoft/STL/pull/3603), [#3615](https://github.com/microsoft/STL/pull/3615), [#3616](https://github.com/microsoft/STL/pull/3616), [#3632](https://github.com/microsoft/STL/pull/3632)),
+* [P0009R18](https://wg21.link/P0009R18): "MDSPAN" (partial: [#3534](https://github.com/microsoft/STL/pull/3534), [#3535](https://github.com/microsoft/STL/pull/3535), [#3560](https://github.com/microsoft/STL/pull/3560), [#3564](https://github.com/microsoft/STL/pull/3564), [#3580](https://github.com/microsoft/STL/pull/3580), [#3586](https://github.com/microsoft/STL/pull/3586), [#3593](https://github.com/microsoft/STL/pull/3593), [#3603](https://github.com/microsoft/STL/pull/3603), [#3615](https://github.com/microsoft/STL/pull/3615), [#3616](https://github.com/microsoft/STL/pull/3616), [#3632](https://github.com/microsoft/STL/pull/3632), [#3672](https://github.com/microsoft/STL/pull/3672), [#3673](https://github.com/microsoft/STL/pull/3673), [#3674](https://github.com/microsoft/STL/pull/3674), [#3682](https://github.com/microsoft/STL/pull/3682), [#3688](https://github.com/microsoft/STL/pull/3688), [#3689](https://github.com/microsoft/STL/pull/3689), [#3690](https://github.com/microsoft/STL/pull/3690), [#3693](https://github.com/microsoft/STL/pull/3693), [#3694](https://github.com/microsoft/STL/pull/3694), [#3698](https://github.com/microsoft/STL/pull/3698), [#3701](https://github.com/microsoft/STL/pull/3701), [#3702](https://github.com/microsoft/STL/pull/3702), [#3715](https://github.com/microsoft/STL/pull/3715)),
 * [P2736R2](https://wg21.link/P2736R2): "Referencing The Unicode Standard" ([#3556](https://github.com/microsoft/STL/pull/3556)),
 * [P2374R4](https://wg21.link/P2374R4): "`views::cartesian_product`" ([#3561](https://github.com/microsoft/STL/pull/3561)).
 
@@ -38,7 +38,8 @@ Fixed bugs:
 * [#3113](https://github.com/microsoft/STL/pull/3113): "`<algorithm>`: `ranges::is_permutation`'s helper lambda does not specify return type",
 * [#3380](https://github.com/microsoft/STL/pull/3380): "`<system_error>`: Use uglified `[[clang::require_constant_initialization]]` attribute",
 * [#3493](https://github.com/microsoft/STL/pull/3493): "`<ranges>`: Fix misused list-initializations",
-* [#3551](https://github.com/microsoft/STL/pull/3551): "`<ranges>`: Fix `ranges::equal` for ranges with integer-class `range_difference_t`".
+* [#3551](https://github.com/microsoft/STL/pull/3551): "`<ranges>`: Fix `ranges::equal` for ranges with integer-class `range_difference_t`",
+* [#3678](https://github.com/microsoft/STL/pull/3678): "Improve `_(Add|Multiply)_with_overflow_check`".
 
 Reported bugs:
 
@@ -47,6 +48,8 @@ Reported bugs:
 * [#3010](https://github.com/microsoft/STL/issues/3010): "Range algorithms don't work when used with unwrappable iterators and custom sentinels",
 * [#3392](https://github.com/microsoft/STL/issues/3392): "`<ranges>`: `views::repeat(...) | views::take(...)` is not always a valid range" (fixed by [#3485](https://github.com/microsoft/STL/pull/3485)),
 * [#3550](https://github.com/microsoft/STL/issues/3550): "`<ranges>`: `ranges::equal` does not work for ranges with integer-class `range_difference_t`" (fixed by [#3551](https://github.com/microsoft/STL/pull/3551)),
+* [#3644](https://github.com/microsoft/STL/issues/3644): "`<chrono>`: Some (weird) durations still cannot be formatted",
+* [#3648](https://github.com/microsoft/STL/issues/3648): "`<chrono>`: `ambiguous_local_time`'s message is slightly incorrect",
 * [StephanTLavavej/STL#18](https://github.com/StephanTLavavej/STL/issues/18): "`<variant>`: Constructor inheritance causes ICE when class in named module inherits from class imported from `module std`",
 * [StephanTLavavej/STL#23](https://github.com/StephanTLavavej/STL/issues/23): "`<ranges>`: Usage of `ranges::iterator_t` causes ICE".
 
@@ -85,9 +88,16 @@ Reported bugs:
 * [#60658](https://github.com/llvm/llvm-project/issues/60658): "\[libc++][ranges] `views::drop` uses non-reserved identifiers `dist` and `clamped`",
 * [#60986](https://github.com/llvm/llvm-project/issues/60986): "\[libc++][ranges] Feature test macro for `views::as_rvalue` is missing",
 * [#61314](https://github.com/llvm/llvm-project/issues/61314): "\[libc++][format] Should `formatter<vec-bool-ref>` be default constructible without `<format>` include?".
+* [#62073](https://github.com/llvm/llvm-project/issues/62073): "\[libc++][format] Should `operator<<(thread::id)` care about fmtflags in C++23?".
+* [#62074](https://github.com/llvm/llvm-project/issues/62074): "\[libc++]\[format][chrono] Problems with `chrono-specs` with short lifetime".
 
 ### Clang
 
+Implemented features:
+
+* [`__builtin_FUNCSIG`](https://github.com/llvm/llvm-project/issues/58951): "\[Clang][clang-cl] Implement `__builtin_FUNCSIG`" ([D150183](https://reviews.llvm.org/D150183)).
+
 Reported bugs:
 
-* [#59827](https://github.com/llvm/llvm-project/issues/59827): "\[Clang][concepts] Conditional explicit specifier is checked too early in constrained constructor".
+* [#59827](https://github.com/llvm/llvm-project/issues/59827): "\[Clang][concepts] Conditional explicit specifier is checked too early in constrained constructor",
+* [#62290](https://github.com/llvm/llvm-project/issues/62290): "\[Clang]\[concepts][regression] Construction of a class `X` nested in class template is ill-formed when `X` has class template friend with specific constraints".
