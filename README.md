@@ -69,7 +69,13 @@ Reported bugs:
 
 * [DevCom-10078204](https://developercommunity.visualstudio.com/t/10078204): "[C++20] (Exporting-)Importing module partition with class that inherits constructor from class imported from standard header unit causes ICE",
 * [DevCom-10187107](https://developercommunity.visualstudio.com/t/10187107): "const_cast cannot be used in constexpr context",
-* [DevCom-10269323](https://developercommunity.visualstudio.com/t/10269323): "[C++] Post-increment operator cannot refer to `this` pointer in `noexcept` specifier".
+* [DevCom-10269323](https://developercommunity.visualstudio.com/t/10269323): "[C++] Post-increment operator cannot refer to `this` pointer in `noexcept` specifier",
+* [DecCom-10302378](https://developercommunity.visualstudio.com/t/10302378): "[C++][Concepts][Regression] Expanding parameter pack in `std::invoke_result_t` may cause ICE",
+* [DevCom-10359857](https://developercommunity.visualstudio.com/t/10359857): "[C++][Modules] std::mdspan is unusable with C++20 modules",
+* [DevCom-10360833](https://developercommunity.visualstudio.com/t/10360833): "[C++][Concepts] CTAD does not work with constrained constructors when `requires` expression contains nested alias",
+* [DevCom-10398426](https://developercommunity.visualstudio.com/t/10398426): "`/analyze:only`: bogus "warning C6287: Redundant code" when expanding integer pack that contains identical values",
+* [DevCom-10404496](https://developercommunity.visualstudio.com/t/10404496): "[C++][Modules] Using `std::views::iota` in member function in module causes ICE",
+* [DevCom-10404498](https://developercommunity.visualstudio.com/t/10404498): "[C++][Modules] Using `std::views::repeat` in member functions gives bogus error about lack of `compare` header".
 
 ## LLVM
 
