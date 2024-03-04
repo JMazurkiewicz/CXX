@@ -15,9 +15,16 @@ Implemented C++23 features:
 * [P2164R9](https://wg21.link/P2164R9): "`views::enumerate`" ([#3472](https://github.com/microsoft/STL/pull/3472)),
 * [P2609R3](https://wg21.link/P2609R3): "Relaxing Ranges Just A Smidge" ([#3486](https://github.com/microsoft/STL/pull/3486)),
 * [P2321R2](https://wg21.link/P2321R2): "`zip`" (partial: [#3508](https://github.com/microsoft/STL/pull/3508), [#3546](https://github.com/microsoft/STL/pull/3546)),
-* [P0009R18](https://wg21.link/P0009R18): "MDSPAN" (partial: [#3534](https://github.com/microsoft/STL/pull/3534), [#3535](https://github.com/microsoft/STL/pull/3535), [#3560](https://github.com/microsoft/STL/pull/3560), [#3564](https://github.com/microsoft/STL/pull/3564), [#3580](https://github.com/microsoft/STL/pull/3580), [#3586](https://github.com/microsoft/STL/pull/3586), [#3593](https://github.com/microsoft/STL/pull/3593), [#3603](https://github.com/microsoft/STL/pull/3603), [#3615](https://github.com/microsoft/STL/pull/3615), [#3616](https://github.com/microsoft/STL/pull/3616), [#3632](https://github.com/microsoft/STL/pull/3632), [#3672](https://github.com/microsoft/STL/pull/3672), [#3673](https://github.com/microsoft/STL/pull/3673), [#3674](https://github.com/microsoft/STL/pull/3674), [#3682](https://github.com/microsoft/STL/pull/3682), [#3688](https://github.com/microsoft/STL/pull/3688), [#3689](https://github.com/microsoft/STL/pull/3689), [#3690](https://github.com/microsoft/STL/pull/3690), [#3693](https://github.com/microsoft/STL/pull/3693), [#3694](https://github.com/microsoft/STL/pull/3694), [#3698](https://github.com/microsoft/STL/pull/3698), [#3701](https://github.com/microsoft/STL/pull/3701), [#3702](https://github.com/microsoft/STL/pull/3702), [#3715](https://github.com/microsoft/STL/pull/3715)),
+* [P0009R18](https://wg21.link/P0009R18): "MDSPAN" ([#3534](https://github.com/microsoft/STL/pull/3534), [#3535](https://github.com/microsoft/STL/pull/3535), [#3560](https://github.com/microsoft/STL/pull/3560), [#3564](https://github.com/microsoft/STL/pull/3564), [#3580](https://github.com/microsoft/STL/pull/3580), [#3586](https://github.com/microsoft/STL/pull/3586), [#3593](https://github.com/microsoft/STL/pull/3593), [#3603](https://github.com/microsoft/STL/pull/3603), [#3615](https://github.com/microsoft/STL/pull/3615), [#3616](https://github.com/microsoft/STL/pull/3616), [#3632](https://github.com/microsoft/STL/pull/3632), [#3672](https://github.com/microsoft/STL/pull/3672), [#3673](https://github.com/microsoft/STL/pull/3673), [#3674](https://github.com/microsoft/STL/pull/3674), [#3682](https://github.com/microsoft/STL/pull/3682), [#3688](https://github.com/microsoft/STL/pull/3688), [#3689](https://github.com/microsoft/STL/pull/3689), [#3690](https://github.com/microsoft/STL/pull/3690), [#3693](https://github.com/microsoft/STL/pull/3693), [#3694](https://github.com/microsoft/STL/pull/3694), [#3698](https://github.com/microsoft/STL/pull/3698), [#3701](https://github.com/microsoft/STL/pull/3701), [#3702](https://github.com/microsoft/STL/pull/3702), [#3715](https://github.com/microsoft/STL/pull/3715), [#3749](https://github.com/microsoft/STL/pull/3749), [#3767](https://github.com/microsoft/STL/pull/3767), [#3786](https://github.com/microsoft/STL/pull/3786), [#3821](https://github.com/microsoft/STL/pull/3821), [#3825](https://github.com/microsoft/STL/pull/3825), [#3829](https://github.com/microsoft/STL/pull/3829), [#3847](https://github.com/microsoft/STL/pull/3847), [#3852](https://github.com/microsoft/STL/pull/3852)),
 * [P2736R2](https://wg21.link/P2736R2): "Referencing The Unicode Standard" ([#3556](https://github.com/microsoft/STL/pull/3556)),
-* [P2374R4](https://wg21.link/P2374R4): "`views::cartesian_product`" ([#3561](https://github.com/microsoft/STL/pull/3561)).
+* [P2374R4](https://wg21.link/P2374R4): "`views::cartesian_product`" ([#3561](https://github.com/microsoft/STL/pull/3561)),
+* [P2693R1](https://wg21.link/P2693R1): "Formatting `thread::id`, `stacktrace_entry`, and `basic_stacktrace`" ([#3861](https://github.com/microsoft/STL/pull/3861)),
+* [P2286R8](https://wg21.link/P2286R8): "Implement debug-enabled `formatter` specializations" ([#3913](https://github.com/microsoft/STL/pull/3913)),
+* [P2836R1](https://wg21.link/P2836R1): "`basic_const_iterator` Should Follow Its Underlying Type's Convertibility" ([#4188](https://github.com/microsoft/STL/pull/4188)).
+
+Implemented C++26 features:
+
+* [P2510R3](https://wg21.link/P2510R3): "Formatting Pointers" ([#4198](https://github.com/microsoft/STL/pull/4198)).
 
 Implemented LWG issues:
 
@@ -39,7 +46,8 @@ Fixed bugs:
 * [#3380](https://github.com/microsoft/STL/pull/3380): "`<system_error>`: Use uglified `[[clang::require_constant_initialization]]` attribute",
 * [#3493](https://github.com/microsoft/STL/pull/3493): "`<ranges>`: Fix misused list-initializations",
 * [#3551](https://github.com/microsoft/STL/pull/3551): "`<ranges>`: Fix `ranges::equal` for ranges with integer-class `range_difference_t`",
-* [#3678](https://github.com/microsoft/STL/pull/3678): "Improve `_(Add|Multiply)_with_overflow_check`".
+* [#3678](https://github.com/microsoft/STL/pull/3678): "Improve `_(Add|Multiply)_with_overflow_check`",
+* [#3733](https://github.com/microsoft/STL/pull/3733): "`<ranges>`: Fix `cartesian_product_view::size` in debug mode".
 
 Reported bugs:
 
@@ -61,7 +69,12 @@ Other improvements:
 * [#3350](https://github.com/microsoft/STL/pull/3350): "Improve `views::elements` tests",
 * [#3390](https://github.com/microsoft/STL/pull/3390): "Improve `views::drop(_while)` and `views::take(_while)` tests",
 * [#3391](https://github.com/microsoft/STL/issues/3391): "`<ranges>`: Add missing test coverage for `ranges::view_interface::c(begin|end)`",
-* [#3553](https://github.com/microsoft/STL/pull/3553): "`<ranges>`: Test `c(begin|end)` members of range factories".
+* [#3553](https://github.com/microsoft/STL/pull/3553): "`<ranges>`: Test `c(begin|end)` members of range factories",
+* [#3610](https://github.com/microsoft/STL/pull/3610): "Testing: Check new C++23 CPOs",
+* [#3753](https://github.com/microsoft/STL/pull/3753): "Make `P2415R2_owning_view/test.cpp` test something",
+* [#3839](https://github.com/microsoft/STL/pull/3839): "`<ranges>`: Improve implementation of recommended practices in `views::cartesian_product`",
+* [#3919](https://github.com/microsoft/STL/pull/3919): "Modernize `validate.cpp`: Use `<print>` instead of `<cstdio>`",
+* [#3920](https://github.com/microsoft/STL/pull/3920): "Testing: check c(begin|end) members of some C++23 ranges".
 
 ### MSVC compiler
 
@@ -83,7 +96,11 @@ Reported bugs:
 
 Implemented C++23 features:
 
-* [P2443R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2443r1.html): "\[libc++][ranges] Implement P2443R1: `views::chunk_by`" (WIP: [D144767](https://reviews.llvm.org/D144767)).
+* [P2443R1](https://wg21.link/P2443R1): "\[libc++][ranges] Implement P2443R1: `views::chunk_by`" ([Phabricator D144767](https://reviews.llvm.org/D144767)),
+* [P2770R0](https://wg21.link/P2770R0): "\[libc++] P2770R0: "Stashing stashing iterators for proper flattening" ([#66033](https://github.com/llvm/llvm-project/pull/66033)),
+* [P2441R2](https://wg21.link/P2441R2): "\[libc++] Implement `views::join_with`" ([In progress: #65536](https://github.com/llvm/llvm-project/pull/65536)),
+* [P2602R2](https://wg21.link/P2602R2): "\[libc++] P2602R2 Poison Pills are Too Toxic" ([In progress: #74534](https://github.com/llvm/llvm-project/pull/74534)),
+* [P2387R3](https://wg21.link/P2387R3): "\[libc++] Implement `bind_back`" ([In progress: #81055](https://github.com/llvm/llvm-project/pull/81055)).
 
 Reported bugs:
 
@@ -93,15 +110,15 @@ Reported bugs:
 * [#60164](https://github.com/llvm/llvm-project/issues/60164): "\[libc++][format] Some contiguous ranges cannot be formatted due to lack of `data` or `size` member functions",
 * [#60658](https://github.com/llvm/llvm-project/issues/60658): "\[libc++][ranges] `views::drop` uses non-reserved identifiers `dist` and `clamped`",
 * [#60986](https://github.com/llvm/llvm-project/issues/60986): "\[libc++][ranges] Feature test macro for `views::as_rvalue` is missing",
-* [#61314](https://github.com/llvm/llvm-project/issues/61314): "\[libc++][format] Should `formatter<vec-bool-ref>` be default constructible without `<format>` include?".
-* [#62073](https://github.com/llvm/llvm-project/issues/62073): "\[libc++][format] Should `operator<<(thread::id)` care about fmtflags in C++23?".
+* [#61314](https://github.com/llvm/llvm-project/issues/61314): "\[libc++][format] Should `formatter<vec-bool-ref>` be default constructible without `<format>` include?",
+* [#62073](https://github.com/llvm/llvm-project/issues/62073): "\[libc++][format] Should `operator<<(thread::id)` care about fmtflags in C++23?",
 * [#62074](https://github.com/llvm/llvm-project/issues/62074): "\[libc++]\[format][chrono] Problems with `chrono-specs` with short lifetime".
 
 ### Clang
 
 Implemented features:
 
-* [`__builtin_FUNCSIG`](https://github.com/llvm/llvm-project/issues/58951): "\[Clang][clang-cl] Implement `__builtin_FUNCSIG`" ([D150183](https://reviews.llvm.org/D150183)).
+* [`__builtin_FUNCSIG`](https://github.com/llvm/llvm-project/issues/58951): "\[Clang][clang-cl] Implement `__builtin_FUNCSIG`" ([Phabricator D150183](https://reviews.llvm.org/D150183)).
 
 Reported bugs:
 
